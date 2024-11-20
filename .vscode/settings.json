@@ -1,0 +1,14 @@
+{
+    "files.associations": {
+        ".fantomasignore": "ignore",
+        "array": "cpp",
+        "deque": "cpp",
+        "queue": "cpp",
+        "vector": "cpp",
+        "xlocinfo": "cpp",
+        "xstring": "cpp",
+        "xutility": "cpp",
+        "stack": "cpp",
+        "ostream": "cpp"
+    }
+}

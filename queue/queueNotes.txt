@@ -1,0 +1,99 @@
+Queue – FIFO - First In First Out (slide 1)
+• Queue – First come, first to be served
+• Similar to Stacks that add elements with push( ) to the end of the Line
+• But Pop( ) removes elements from the Front – 1st element
+• Stacks pop() removes elements from the back – end of the line (top()) –
+burying the 1st element
+• Printer que which prints jobs in the order they arrive
+• Checkout Lines that proceed in order of arrival
+
+-------------------------------------------------------
+
+Queue pop is opposite of a stack (slide 2)
+• Enter Queue in the back/bottom - E is the next to enter (push)
+• Leave Queue from the front top - A is the next to leave (pop)
+
+**Figure 1
+
+In a Stack D would be next to leave (pop)
+
+-------------------------------------------------------
+
+Queue commands (slide 3)
+Queue commands
+• Push(#) enters the next data at the end of the line  enqueue  rear++
+• Pop(#) removes an element from the front of the queue  dequeue  front++
+• When we pop deque – the data cell remains empty
+• .size( ) returns the size
+• .empty( ) determines if the queue is empty
+• Front( ) & back( ) return the 1st and last element
+• Enqueue Adds Elements to the Rear
+• DeQueue Removes Elements from the Front
+
+-------------------------------------------------------
+
+Queue commands – Size(), front(), back() (slide 4)
+queue<int> theQueue;
+theQueue.push(3);
+theQueue.push(9);
+theQueue.push(12);
+cout << "\n\nSize = " << q.size();
+cout << "\nFront = " << q.front();
+cout << "\n back = " << q.back();
+
+-------------------------------------------------------
+
+Queue Commands – Function solves draining problem (slide 5)
+
+#include<queue> Queue<int> queName, push(), pop(), empty(), Front()
+
+**program 1
+
+-------------------------------------------------------
+
+Queue drain - use Functions and rely on Call-By-Value (part 8)
+
+In main( ) with #include<queue>
+
+**program 2
+
+-------------------------------------------------------
+
+Create a to-do List and pop off completed tasks (slide 10)
+
+• Using String a Queue, populate the Queue with a to-do List
+• Display the total list
+• Remove the 1st item and display the remaining list. Repeat
+
+-------------------------------------------------------
+
+Queue vs Stack (slide 11)
+
+• Stack commands – push, pop, size, top, empty
+• Queue commands – push, pop, size, empty, front, back
+
+-------------------------------------------------------
+
+Checking the Dequeue & Enqueue status (slide 12)
+
+• The front and rear indices will both be set to −1 to indicate an empty queue.
+• The dequeuing operation can test for a queue with only one item by testing
+whether front is equal to rear.
+• The operation for dequeuing an element must set both front and rear to −1 after
+removing an element from a queue with only one item
+• To avoid overflowing the queue, the operation for enqueuing must first
+check that the queue is not already full before adding another element.
+• We can check to see if the queue is full by testing the expression
+• (rear + 1) % queueSize == front
+
+-------------------------------------------------------
+
+Circular Queues (slide 15)
+
+• When the Array is Full we want to adjust the rear pointer to point at 0
+• if (rear == queueSize − 1)
+• rear = 0;
+• else
+• rear++;
+• Another approach is with modular arithmetic:
+• rear = (rear + 1) % queueSize;

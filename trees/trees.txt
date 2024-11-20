@@ -1,0 +1,282 @@
+Trees and Tree Searches
+
+• Tree Structure
+• Binary Tree Sort
+• PreOrder Traversal
+• InOrder Traversal
+• PostOrder Traversal
+
+-------------------------------------------------------
+
+Tree Structure – Nodes, Left & Right
+• Nodes are center
+• Left for smaller values
+• Right for larger values
+
+**figure 2
+
+-------------------------------------------------------
+
+Binary Trees only have 2 Children (1 Left & 1
+Right)
+
+• Binary Sort Rule says Less than goes Left, Greater than goes Right
+• Before the Tree Algorithm Sorts the #s
+• We have array scores[7] = {5,2,8,4,9,6,1}
+
+** figure 3
+
+-------------------------------------------------------
+After the Tree Algorithm Sorts the #s
+
+• We have array scores[7] = {5,2,8,4,9,6,1}
+• Is 2 less than 5? Y go left
+• Is 8 greater than 5? Y go right
+• 4 < 5 y Left 4> 2 y Right
+• 9>5 right, 9>8 right
+• 6>5 right, 6<8 left
+
+** figure 4
+
+-------------------------------------------------------
+Transform initial Tree to Binary Tree
+
+• Given the #s 13, 7, 15, 5, 10, 3
+• We create a Tree but because it’s unbalanced, we push to 7 and try
+again
+
+** figure 5
+
+Because 13 is too Large, rotate Right – new
+Root
+7, 13, 15, 5, 10, 3
+
+** figure 6
+-------------------------------------------------------
+
+Example rotate Left – make 8 the Root
+
+7 4 12 8 15 9 2
+
+** figure 7
+
+8 7 4 12 15 9 2
+** figure 8
+-------------------------------------------------------
+Balanced Tree
+
+Binary trees have up to two children
+
+** figure 9
+-------------------------------------------------------
+
+4 Operations on a Binary Tree
+
+• Search
+• Insert
+• Delete
+• BST & DST Traversals
+• Pre-Order
+• In-Order
+• Post-Order
+-------------------------------------------------------
+
+BST – Breadth First Traversal – Row by Row
+
+BST – 1 Row at a time = L F Q D J P T
+
+** figure 10
+-------------------------------------------------------
+
+DST – Depth Search Traversal – Column by
+Col
+
+• Recursively Travel in the indicated Direction until a Leaf Node is
+encountered
+• PreOrder Traversal  print // Travel Left // Travel Right
+• InOrder Traversal  Travel Left // print // Travel Right
+• PostOrder Traversal  Travel Left // Travel Right // print
+-------------------------------------------------------
+PreOrder Traversal
+
+• Node // Left // Right
+• 5 2 1 4 8 6 9
+
+After the Tree Algorithm Sorts the #'s
+- We have array scores[7] ={5, 2, 8, 4, 9, 6, 1}
+- is 2 less than 5? Y go left
+- is 8 greater than 5? Y go right 
+- 4 < 5 y left 4> 2 y right 
+- 9>5 right, 9> 8 right
+- 6 > 5 right, 6<8 left 
+
+** figure 11
+-------------------------------------------------------
+
+PreOrder Traversal – Node // Left // Right
+
+• Node // Left // Right
+• A B C D E F G
+
+** figure 12    
+-------------------------------------------------------
+
+inOrder Traversal – sets Tree #s in Ascending
+Order
+
+• Left // Node // Right  slide all the way left before any node is listed
+• 1 2 4 5 6 8 9
+
+After the Tree Algorithm Sorts the #'s 
+
+- We have array scores[7] = {5, 2, 8, 4, 9, 6, 1}
+- is 2 less than 5? y go left
+- is 8 greater than 5? y go right 
+- 4<5 y left, 4>2 y right 
+- 9 > 5 right, 9 > 8 right 
+- 6>5 right,  6 < 8 left
+
+** figure 13
+-------------------------------------------------------
+
+InOrder Traversal – Left // Node // Right
+
+• Left // Node // Right
+• D B F A C E G 
+• A B C D E F G
+
+** figure 14
+-------------------------------------------------------
+
+PostOrder Traversal – Left // Right // Node
+
+• Left // Right // Node  slide all the way left before any node is listed
+• 1 4 2 6 9 8 5
+
+After the Tree Algorithm Series the #'s 
+
+- we have array scores[7] = {5, 2, 8, 4, 9, 6, 1}
+- is 2 less than 5? y go left
+- is 8 greater than 5? y go right 
+- 4 < 5 y left, 4 > 2 y right 
+- 9> 5 right, 9 > 8 right
+- 6 > 5 right, 6<8 left 
+
+** figure 15
+-------------------------------------------------------
+PostOrder Traversal – Left // Right // Node
+
+• Left // Right // Node
+• D B F G E A C 
+• A C B E G F D
+
+** figure 16
+-------------------------------------------------------
+Coding Trees uses Nodes, 1 value & 2
+pointers
+
+struct TreeNode
+{
+int value;
+TreeNode *left;
+TreeNode *right;
+};
+
+** figure 17
+
+-------------------------------------------------------
+
+A Leaf (no children) points to nullptr
+
+• nullptr can be assigned to any Leaf
+
+** figure 18
+-------------------------------------------------------
+
+Code to Create a Tree Manually using Struct & Main()
+• Define the Node & Creation
+** program1
+
+• Implement Filling the Tree
+** program 2
+
+-------------------------------------------------------
+
+Display( ) Function for PreOrder Traversal
+
+• Note the Recursive call to display
+• Call in main( ) - display(root);
+• Verify the PreOrder Traversal
+• How would display be modified for
+PostOrder Traversal?
+• InOrder Traversal?
+
+** program3
+
+-------------------------------------------------------
+
+Traversals – In-Order & Post-Order
+
+In-Order Traversal – ascending / alphb
+
+** program 4
+
+Post Order
+
+** program 5
+
+-------------------------------------------------------
+
+Lab 8 – Using a name for the Character Tree
+
+Modify Node
+** program 6
+
+Main.cpp Tree creation
+** program 7
+
+-------------------------------------------------------
+Strings
+
+Define & create nodes
+** program 8
+
+Main.cpp
+** program 9
+-------------------------------------------------------
+
+Defining the Tree in Main.cpp
+
+Define node & node creation
+**program10
+
+Main.cpp
+**program11
+-------------------------------------------------------
+
+Chat Tree Code using Classes TreeNode & BinaryTree
+
+ Defining Class
+ ** program 12
+
+ Managing Class
+** program 13
+-------------------------------------------------------
+
+Main( ) for Chat Tree
+
+** program 14
+-------------------------------------------------------
+
+Removing a Node – pg 1237
+
+• Code for Remove a Node
+** program 15
+
+• Main( )
+** program 16
+-------------------------------------------------------
+
+Code for Deletion
+
+** program 17

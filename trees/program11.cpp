@@ -1,0 +1,21 @@
+int main() {
+Node* rootNode = Node::createNode(3);
+Node* leftChild = Node::createNode(2);
+Node* rightChild = Node::createNode(5);
+rootNode->left = leftChild;
+rootNode->right = rightChild;
+Node* leftChild1 = Node::createNode(0);
+Node* rightChild1 = Node::createNode(1);
+Node* leftChild2 = Node::createNode(4);
+Node* rightChild2 = Node::createNode(9);
+cout << "Root Data: " << rootNode->data << endl;
+cout << "Left Child: " << rootNode->left->data << endl;
+cout << "Right Child: " << rootNode->right->data << endl;
+leftChild->left = leftChild1;
+leftChild->right = rightChild1;
+rightChild->left = leftChild2;
+rightChild->right = rightChild2;
+cout << "Left child 1: " << leftChild->left->data << endl;
+cout << "Left child 2: " << leftChild->right->data << endl;
+cout << "Right child 1: " << rightChild->left->data << endl;
+cout << "Right child 2: " << rightChild->right->data << endl;

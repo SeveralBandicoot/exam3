@@ -1,0 +1,135 @@
+Graphs
+
+• Vertices & Edges
+• Adjacency Matrix
+• Adjacency List
+• Coding a Graph
+• Re-creating the Graph (from Matrix & List)
+• Uses include Networking, GPS maps, social media,
+
+-------------------------------------------------------
+Vertices & Edges
+• Vertice = Node
+• Edge = connection between Nodes/Vertices
+• can be unidirectional or bidirectional
+• Can be uniform or weighted
+
+** figure 1
+-------------------------------------------------------
+Adjacency Matrix
+• Graph A
+** figure 2
+-------------------------------------------------------
+
+Adjacency List
+
+• 0 -> 1 2
+• 1 -> 0 2 3
+• 2 -> 0 1
+• 3 -> 1
+
+** figure 3
+-------------------------------------------------------
+
+Coding Adjacency Lists with maps
+
+** program1
+-------------------------------------------------------
+
+Coding Adj List with Vectors simulating a List
+
+** program2
+-------------------------------------------------------
+Example Graph
+
+• A->B, A->C,
+• B->D, B->E
+• D->F
+
+** figure 4
+-------------------------------------------------------
+
+Given a graph, create a Table and a List
+
+• Table – Columns & Rows with q
+single entry are Leafs • Adjacency List
+• A -> B, C
+• B -> A, D, E
+• C -> A
+• D -> B, F
+• E -> B
+• F -> D
+
+** figure 5
+-------------------------------------------------------
+
+Coding the Adjacency List with a Map
+
+** program 3
+-------------------------------------------------------
+
+Given an Adj List, Create the Graph & Matrix
+
+• Adj List 
+• Graph
+
+** figure 6
+-------------------------------------------------------
+
+Coding the Adj List with Vectors simulating a List
+** program 4
+-------------------------------------------------------
+Given a Matrix, create the Table and Graph
+
+• Create the List
+• Create the Code
+
+** figure 7
+-------------------------------------------------------
+Traversals – DFS & BFS
+
+• Depth First Search
+• 1 path is continued until a dead
+end occurs (backup until another
+route presents)
+• 0-1, 1-3, 1-2 or 0-2
+
+• Breadth First Search
+• 1 step is taken and then back up
+and take 1 step in the other
+direction until all directions are
+used up (retrace each step as
+the new node taking one step,
+then back and take the other
+step and then back,...)
+• 0-1, 0-2, 1-3, ... 1-2 or 0-2
+
+** figure 8
+-------------------------------------------------------
+DFS = O(v+e) v = vertices, e = edges
+• Traverse each v only once
+• Traverse each edge/path only
+once
+• Traverse both only once
+• DFS vs BFS
+-------------------------------------------------------
+Chat creating of a Graph with Matrix – 2-d
+Array
+** program 5
+-------------------------------------------------------
+
+Chat Graph with Adjacency List
+
+** program 6
+-------------------------------------------------------
+
+DFS – Depth First Search
+-------------------------------------------------------
+
+Chat BFS – Breadth First Search
+
+** program 7
+-------------------------------------------------------
+
+Weighted Graph
+** program 8
